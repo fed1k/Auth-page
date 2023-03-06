@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply bg-white shadow-md rounded-xl p-4 flex flex-col self-stretch gap-4 sm:self-auto sm:w-auto
+}
+
+.input {
+  @apply bg-slate-100 py-3 px-4 rounded-md border border-slate-300 outline-none
+}
+
+.verif-code-input {
+  @apply w-8 h-10 border-slate-300 border rounded-md text-2xl pl-2 text-slate-900 font-extrabold outline-none
+}
+
+.header-text {
+  @apply text-2xl font-black text-slate-900
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.done {
+  scale: 4;
+}
